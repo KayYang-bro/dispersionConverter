@@ -4,19 +4,13 @@ This project derives an exact algebraic conversion from the
 three-term modified dispersion equation
 
 $$
-\frac{n^2-1}{n^2+2}
-=
-\sum_{i=1}^{3}
-\frac{P_i\lambda^2}{\lambda^2-Q_i}
+\frac{n^2-1}{n^2+2}=\sum_{i=1}^{3}\frac{P_i\lambda^2}{\lambda^2-Q_i}
 $$
 
 to the standard three-term Sellmeier equation
 
 $$
-n^2 =
-1+
-\sum_{i=1}^{3}
-\frac{B_i\lambda^2}{\lambda^2-C_i}.
+n^2 =1+\sum_{i=1}^{3}\frac{B_i\lambda^2}{\lambda^2-C_i}.
 $$
 
 The two representations are mathematically equivalent: the
@@ -110,12 +104,7 @@ $$
 The modified dispersion equation is
 
 $$
-S(x)
-=
-\frac{n^2-1}{n^2+2}
-=
-\sum_{i=1}^{3}
-\frac{P_i x}{x-Q_i}.
+S(x)= \frac{n^2-1}{n^2+2} = \sum_{i=1}^{3} \frac{P_i x}{x-Q_i}.
 $$
 
 Writing the right-hand side as
@@ -133,29 +122,19 @@ $$
 and
 
 $$
-N(x)
-=
-\sum_{i=1}^{3}
-P_i x
-\prod_{j\ne i}(x-Q_j),
+N(x)=\sum_{i=1}^{3}P_i x\prod_{j\ne i}(x-Q_j),
 $$
 
 we obtain
 
 $$
-n^2
-=
-\frac{1+2S}{1-S}
-=
-\frac{D+2N}{D-N}.
+n^2=\frac{1+2S}{1-S}=\frac{D+2N}{D-N}.
 $$
 
 Therefore,
 
 $$
-n^2-1
-=
-\frac{3N}{D-N}.
+n^2-1=\frac{3N}{D-N}.
 $$
 
 ---
@@ -186,9 +165,7 @@ $$
 Thus,
 
 $$
-D(x)-N(x)
-=
-K\prod_{i=1}^{3}(x-C_i).
+D(x)-N(x)=K\prod_{i=1}^{3}(x-C_i).
 $$
 
 The roots $C_i$ therefore correspond directly to the $C_i$ parameters
@@ -206,39 +183,25 @@ calculated symbolically using SymPy.
 Starting from
 
 $$
-n^2-1
-=
-\frac{3N(x)}{D(x)-N(x)},
+n^2-1=\frac{3N(x)}{D(x)-N(x)},
 $$
 
 perform a partial-fraction decomposition:
 
 $$
-n^2-1
-=
-A+
-\sum_{i=1}^{3}
-\frac{R_i}{x-C_i}.
+n^2-1=A+\sum_{i=1}^{3}\frac{R_i}{x-C_i}.
 $$
 
 For a simple root $C_i$,
 
 $$
-R_i
-=
-\frac{3N(C_i)}
-{(D-N)'(C_i)}.
+R_i=\frac{3N(C_i)}{(D-N)'(C_i)}.
 $$
 
 Using
 
 $$
-\frac{R_i}{x-C_i}
-=
-\frac{R_i}{C_i}
-\frac{x}{x-C_i}
--
-\frac{R_i}{C_i},
+\frac{R_i}{x-C_i}=\frac{R_i}{C_i}\frac{x}{x-C_i}-\frac{R_i}{C_i},
 $$
 
 we obtain
@@ -250,9 +213,7 @@ $$
 The constant term is then
 
 $$
-B_0
-=
-1+A-\sum_{i=1}^{3}B_i.
+B_0=1+A-\sum_{i=1}^{3}B_i.
 $$
 
 
@@ -260,11 +221,7 @@ For the present transformation, the converted equation takes the
 standard form
 
 $$
-\boxed{n^2
-=
-1+
-\sum_{i=1}^{3}
-\frac{B_i x}{x-C_i}}.
+\boxed{n^2=1+\sum_{i=1}^{3}\frac{B_i x}{x-C_i}}.
 $$
 
 ### Why is the constant term 1?
@@ -276,13 +233,7 @@ original Lorentz--Lorenz-type equation.
 Recall that
 
 $$
-S(x)
-=
-\frac{n^2-1}{n^2+2}
-=
-\sum_{i=1}^{3}
-\frac{P_i x}{x-Q_i},
-\qquad x=\lambda^2.
+S(x)=\frac{n^2-1}{n^2+2}=\sum_{i=1}^{3}\frac{P_i x}{x-Q_i},\qquad x=\lambda^2.
 $$
 
 If $Q_i\neq0$, then
@@ -294,23 +245,13 @@ $$
 Therefore,
 
 $$
-\lim_{x\to0}n^2
-=
-\lim_{x\to0}\frac{1+2S(x)}{1-S(x)}
-=1.
+\lim_{x\to0}n^2=\lim_{x\to0}\frac{1+2S(x)}{1-S(x)}=1.
 $$
 
 On the converted side, if $C_i\neq0$,
 
 $$
-\lim_{x\to0}n^2
-=
-\lim_{x\to0}
-\left(
-B_0+\sum_{i=1}^{3}
-\frac{B_i x}{x-C_i}
-\right)
-=B_0.
+\lim_{x\to0}n^2=\lim_{x\to0}\left(B_0+\sum_{i=1}^{3}\frac{B_i x}{x-C_i}\right)=B_0.
 $$
 
 Consequently,
@@ -331,36 +272,25 @@ partial-fraction decomposition.
 Starting from
 
 $$
-n^2-1
-=
-A+
-\sum_{i=1}^{3}
-\frac{R_i}{x-C_i},
+n^2-1=A+\sum_{i=1}^{3}\frac{R_i}{x-C_i},
 $$
 
 taking $x\to\infty$ gives
 
 $$
-A
-=
-\lim_{x\to\infty}(n^2-1).
+A=\lim_{x\to\infty}(n^2-1).
 $$
 
 The Sellmeier representation gives
 
 $$
-n^2-1
-=
-\sum_{i=1}^{3}
-\frac{B_i x}{x-C_i},
+n^2-1=\sum_{i=1}^{3}\frac{B_i x}{x-C_i},
 $$
 
 and therefore
 
 $$
-\lim_{x\to\infty}(n^2-1)
-=
-\sum_{i=1}^{3}B_i.
+\lim_{x\to\infty}(n^2-1)=\sum_{i=1}^{3}B_i.
 $$
 
 Hence,
@@ -448,26 +378,14 @@ real.
 The refractive index calculated from the converted Sellmeier equation is
 
 $$
-n_{\mathrm{converted}}(\lambda)
-=
-\sqrt{
-1+
-\sum_{i=1}^{3}
-\frac{B_i\lambda^2}
-{\lambda^2-C_i}
-}.
+n_{\mathrm{converted}}(\lambda)=\sqrt{1+\sum_{i=1}^{3}\frac{B_i\lambda^2}{\lambda^2-C_i}}.
 $$
 
 This is compared with the refractive index calculated directly from
 the original modified dispersion equation,
 
 $$
-n_{\mathrm{original}}(\lambda)
-=
-\sqrt{
-\frac{1+2S(\lambda)}
-{1-S(\lambda)}
-}.
+n_{\mathrm{original}}(\lambda)=\sqrt{\frac{1+2S(\lambda)}{1-S(\lambda)}}.
 $$
 
 Of the 155 glasses listed in the HIKARI GLASS catalog, 152 provide
