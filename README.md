@@ -432,6 +432,64 @@ $$
 The converted representation is symbolically identical to the
 original representation for the supplied input coefficients.
 
+### Evaluation Results
+
+Absolute difference in refractive index $n$ between the original and
+converted representations for the discrete validation wavelengths 
+sampled between 0.400 to 0.800 µm is shown below.
+
+$$
+\varDelta n_\mathrm{max\_ abs}=\max_{\lambda \in \Lambda} {\left| n_{\mathrm{original}}(\lambda)-n_{\mathrm{converted}}(\lambda)\right|},
+$$
+$$
+\Lambda=\{ \lambda \ \mathrm{\mu m} | \lambda \in \{0.400, 0.450, 0.486133, 0.500, 0.550, 0.587562, 0.600, 0.650, 0.700, 0.800 \} \}
+$$
+
+- 0.0e-16
+
+    J-KZFH11
+
+- 2.2e-16
+
+    J-FK5, J-FKH1, J-PKH1, J-PSK02, J-PSK03, J-PSKH1, J-PSKH8, 
+J-BK7A, J-BAK1, J-BAK2, J-BAK4, J-K3, J-K5, J-KZFH1, J-KZFH4, 
+J-KZFH6, J-KZFH7, J-KZFH9, J-KZFH10, J-KF6, J-BALF4, J-BAF10, 
+J-BASF2, J-BASF7, J-BASF8, J-SK2, J-SK4, J-SK5, J-SK11, J-SK12, 
+J-SK14, J-SK15, J-SK16, J-SK18, J-SSK5, J-LLF1, J-LLF2, J-LLF6, 
+J-F2, J-F5, J-SF1, J-SF2, J-SF4, J-SF5, J-SF6, J-SF6HS, J-SF7, 
+J-SF8, J-SF10, J-SF14, J-SF03, J-SF03HS, J-SFS3, J-SFH1, J-SFH1HS, 
+J-SFH2, J-SFH5, J-SFH6, J-SFH8, J-SFH9, J-LAK7R, J-LAK8, J-LAK10, 
+J-LAK12, J-LAK18, J-LAK01, J-LASKH2, J-LAF2, J-LAF7, J-LAF01, 
+J-LAF05, J-LAF010, J-LASF01, J-LASF02, J-LASF05, J-LASF05HS, 
+J-LASF08A, J-LASF09A, J-LASF010, J-LASF013, J-LASF014, J-LASF015, 
+J-LASF015HS, J-LASF016, J-LASF017, J-LASFH2, J-LASFH6, J-LASFH9A, 
+J-LASFH13, J-LASFH13HS, J-LASFH21, J-LASFH22, J-LASFH24, J-LASFH24HS, 
+Q-FKH1S, Q-PSKH2S, Q-SK55S, Q-SF6S, Q-LAK53S, Q-LAF010S, Q-LASF03S, 
+Q-LASFH11S, Q-LASFH58S, Q-LASFH59S, Q-LASFPH2S, Q-LASFPH3S,
+
+- 4.4e-16
+
+     J-FK01A, J-PSKH4, J-BAF11, J-BASF6, J-SK10, J-SSK1, J-SSK8, J-LF5, 
+ J-LF6, J-LF7, J-F8, J-SF11, J-SF13, J-SF15, J-SFH4, J-LAK7, J-LAK13, 
+ J-LAK14, J-LAK09, J-LAK011, J-LAF3, J-LAF02, J-LAF04, J-LAFH3, J-LAFH3HS, 
+ J-LASF03, J-LASF021, J-LASF021HS, J-LASFH15, J-LASFH15HS, J-LASFH15SS, 
+ J-LASFH16, J-LASFH16HS, J-LASFH17, J-LASFH17HS, J-LASFH23, Q-PSKH1S, 
+ Q-PSKH4S, Q-SK15S, Q-LAK52S, Q-LAFPH1S, 
+
+- 6.6e-16
+
+    J-F1, Q-LASFH12S
+
+- 8.8e-16
+
+    J-LAF016, J-LAF016HS
+
+Let $G = \{g_1, g_2, \dots, g_{152} \} $ be the set of 152 optical glass types from HIKARI GLASS Co., Ltd., and $n(g)$ denote the refractive index of a glass $g \in G$.
+
+$$
+E\left[\varDelta n_\mathrm{max\_ abs}(g)\mid {g \in G}\right]=2.9\times 10^{-16}
+$$
+
 ---
 
 ## Future work
