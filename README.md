@@ -442,7 +442,7 @@ $$
 \varDelta n_\mathrm{max\_ abs}=\max_{\lambda \in \Lambda} {\left| n_{\mathrm{original}}(\lambda)-n_{\mathrm{converted}}(\lambda)\right|},
 $$
 $$
-\Lambda=\{ \lambda \ \mathrm{\mu m} | \lambda \in \{0.400, 0.450, 0.486133, 0.500, 0.550, 0.587562, 0.600, 0.650, 0.700, 0.800 \} \}
+\Lambda=\lbrace \lambda \ \mathrm{\mu m} | \lambda \in \lbrace 0.400, 0.450, 0.486133, 0.500, 0.550, 0.587562, 0.600, 0.650, 0.700, 0.800 \rbrace \rbrace
 $$
 
 - 0.0e-16
@@ -484,7 +484,7 @@ Q-LASFH11S, Q-LASFH58S, Q-LASFH59S, Q-LASFPH2S, Q-LASFPH3S,
 
     J-LAF016, J-LAF016HS
 
-Let $G = \{g_1, g_2, \dots, g_{152} \} $ be the set of 152 optical glass types from HIKARI GLASS Co., Ltd., and $n(g)$ denote the refractive index of a glass $g \in G$.
+Let $G = \lbrace g_1, g_2, \dots, g_{152}\rbrace $ be the set of 152 optical glass types from HIKARI GLASS Co., Ltd., and $n(g)$ denote the refractive index of a glass $g \in G$.
 
 $$
 E\left[\varDelta n_\mathrm{max\_ abs}(g)\mid {g \in G}\right]=2.9\times 10^{-16}
